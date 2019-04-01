@@ -1,0 +1,47 @@
+*.log
+*.egg-info/
+build/
+dist/
+.DS_Store
+venv
+log
+
+# IDEs
+.project
+.pydevproject
+.idea
+.vscode
+.settings
+
+# Random files
+*~
+\#*
+
+virtualenv/
+htmlcov/
+src/static_dist/
+src/static_root/
+
+# Project settings
+local_settings.py
+
+# Python compiled byte code
+*.pyc
+
+# SQLite3 database
+*.sqlite
+
+# Node modules
+node_modules/
+yarn.lock
+npm-debug.log
+
+# Coverage
+coverage/
+.coverage
+.cache
+
+# static validation files
+.eslintrc
+.sass-lint.yml
+.prospector.yml

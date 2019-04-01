@@ -1,0 +1,20 @@
+version: '3'
+services:
+  pyspark:
+    image: spark
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "4040:4040"
+    volumes:
+     - ./app:/app
+     - ./data:/data
+     - /tmp/:/tmp/spark-events
+  history:
+    image: spark
+    ports:
+     - "18080:18080"
+    volumes:
+     - /tmp/:/tmp/spark-events
+    entrypoint: /entrypoint.sh
